@@ -1,0 +1,11 @@
+.TopComponent{
+  -webkit-box-shadow: 0px 0px 8px 2px #000000;
+  background: black
+}
+
+.AppLogo{
+  width: 70px;
+  height: 70px;
+  text-align: left;
+  margin-left: 50px;
+}

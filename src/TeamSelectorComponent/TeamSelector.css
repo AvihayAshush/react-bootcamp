@@ -1,0 +1,21 @@
+.TeamLogo{
+  margin: 35px 13px 35px 50px;
+}
+
+.FeedName{
+  font-size: 2rem;
+  font-family: "roboto_black";
+  color: #252525;
+}
+
+@media (max-width: 760px){
+  .TeamLogo{
+    height: 39px;
+    width: 34px;
+    margin: 24px 13px 24px 50px;
+}
+}
+
+@media (min-width: 760px){
+
+}
