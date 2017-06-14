@@ -5,7 +5,7 @@ import {FeedSelector} from '../FeedSelectComponent/FeedSelect'
 
 export function TeamSelector(props){
    return(
-       <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+       <div className='TeamSelectorHolder'>
            <img
               className= 'TeamLogo'
               src ={props.teamLogoUrl}

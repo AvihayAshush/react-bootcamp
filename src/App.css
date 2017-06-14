@@ -37,3 +37,8 @@
   margin: 0;
   padding: 0;
 }
+
+.Loader{
+  text-align: center;
+  animation: App-logo-spin infinite 10s linear;
+}
