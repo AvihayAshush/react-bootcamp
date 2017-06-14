@@ -4,19 +4,23 @@ import './FeedSelect.css'
 export function FeedSelector(props){
   return (
       <select className='show-tick' defaultValue = "1" onChange={changeOption}>
-          {props.leagues.map(function(league, leagueIndex){
+          {props.leagues.map(function(league){
               return (
-                  <optgroup label={league.league.name} key={leagueIndex}>
-                  {league.teams.map(function(team, teamIndex){
-                      return (
-                          <option value={team.id} key={teamIndex}>{team.name}</option> 
-                      )
-                  })}
+                  <optgroup label={league.league.name} key={league.id}>
+                       {teams(league)};
                   </optgroup>
               )
           })}
       </select>
   )
+
+  function teams(league){
+      return league.teams.map(function(team, teamIndex){
+            return (
+                <option value={team.id} key={team.id}>{team.name}</option> 
+            )
+      }) 
+  }
 
   function changeOption(event){
       const selectedTeam = props.leagues
